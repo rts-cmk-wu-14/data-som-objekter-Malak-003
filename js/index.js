@@ -8,7 +8,7 @@ const heroSection = document.querySelector(".hero")
 function renderHero(data) {
   heroSection.innerHTML = `
     <div class="hero-content">
-      <img class="hero-img" src="${data.image}" alt="Hero image">
+    <img class="hero-img" src="${data.image}" >
       <div class="hero-text">
         <h1>${data.headline}</h1>
         <p class="heroP">${data.copy}</p>
@@ -19,13 +19,34 @@ function renderHero(data) {
 }
 renderHero(hero)
 
-// const  servicesSection = document.querySelector(".services")
-// function renderHero(data){
-// servicesSection.innerHTML = `
-//       <div class="hero-content">
 
-// `
-// }
+// Services--------------
+const servicesSection = document.querySelector(".services")
+
+function renderServices(data) {
+  // laver HTML til hvert servicekort
+  let serviceCards = data.map(service => {
+    return `
+      <div class="service-card">
+      <img src="${service.illustration}" alt="">
+      <h3>${service.headline}</h3>
+      <p>${service.text}</p>
+        <a href="#">${service.linktext}</a>
+      </div>
+    `
+  }).join("")
+
+  // sætter alt ind i section
+  servicesSection.innerHTML = `
+    <div class="services-wrapper">
+    ${serviceCards}
+    </div>
+  `
+}
+renderServices(services)
+
+
+
 
 
 
