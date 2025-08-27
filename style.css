@@ -110,5 +110,50 @@ button{
 }
 
 
+/* ===== Service SECTION ===== */
+.facilities-wrapper{
+  display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+
+}
+
+.facility-card{
+  max-width: 230px;
+}
+
+.facility-card h3{
+  font-size: 22.5px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.facility-card p{
+  font-size: 14px;
+      opacity: 60%;
+      margin: 20px 0 20px 0;
+     line-height: 1.4;
+
+}
+
+.facility-card a{
+  font-size: 20px;
+  font-weight: bold;
+  color: #F78065;
+  text-decoration: none;
+
+}
+
+.facilities{
+    padding: 100px;
+
+}
+
+.facilities h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
 
 

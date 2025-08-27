@@ -17,6 +17,7 @@ function renderHero(data) {
     </div>
   `
 }
+// Kald funk
 renderHero(hero)
 
 
@@ -46,6 +47,30 @@ function renderServices(data) {
 renderServices(services)
 
 
+// Facilities --------------
+const facilitiesSection = document.querySelector(".facilities")
+
+function renderFacilities(data) {
+  let facilityCards = data.options.map(facility => {
+    return     `
+      <div class="facility-card">
+        <img src="${facility.icon}" alt="">
+        <h3>${facility.headline}</h3>
+        <p>${facility.text}</p>
+        <a href="#">Show me more</a>
+      </div>
+    `
+  }).join("")
+
+  facilitiesSection.innerHTML = `
+    <h2>${data.headline}</h2>
+    <div class="facilities-wrapper">
+      ${facilityCards}
+    </div>
+  `
+}
+
+renderFacilities(facilities)
 
 
 
