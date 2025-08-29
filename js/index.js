@@ -73,6 +73,39 @@ function renderFacilities(data) {
 renderFacilities(facilities)
 
 
+// Sites --------------
+
+const sitesSection = document.querySelector(".sites")
+
+function renderSites(data) {
+  let sitesCards = data.places.map(site => {
+    return `
+      <div class="sites-card">
+        <img src="${site.img}" alt="${site.name}">
+        <h3>${site.name}</h3>
+        <p>${site.city}</p>
+        <a href="#">View the Site</a>
+      </div>
+    `
+  }).join("")
+
+  sitesSection.innerHTML = `
+  <div class="sitesHead">
+    <h2>${data.headline}</h2>
+    <p>${data.text}</p>
+      <button > <img class="icon" src="${data.btnicon}"> Start  </button>
+      </div>
+
+
+    <div class="sites-wrapper">
+      ${sitesCards}
+    </div>
+  `
+}
+
+renderSites(sites)
+
+
 
 
 

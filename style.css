@@ -156,4 +156,58 @@ button{
 }
 
 
+/* ===== Sites SECTION ===== */
+
+.sites{
+  display: flex;
+  gap: 50px;
+  padding: 80px;
+}
+
+.sites h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.sitesHead p {
+  font-size: 18px;
+        opacity: 60%;
+        margin: 20px 0 20px 0;
+
+}
+
+.sites-wrapper{
+  display: flex;
+        gap: 40px;
+}
+
+.sites-card img{
+  width: 210px;
+  height: 350px;
+  object-fit: cover;
+  
+}
+
+.sites-card h3{
+font-size: 24px;
+font-weight: bold;
+margin: 10px 0 10px 0;
+  
+}
+
+.sites-card p{
+font-size: 14px;
+margin-bottom: 10px;
+opacity: 60%;
+}
+
+.sites-card a {
+  text-decoration: none;
+  font-size: 19px;
+  color: #F78065;
+
+}
+
+
+
 
