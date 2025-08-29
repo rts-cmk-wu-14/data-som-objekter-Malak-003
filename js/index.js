@@ -106,6 +106,28 @@ function renderSites(data) {
 renderSites(sites)
 
 
+// Advantages --------------
+const advantagesSection = document.querySelector(".advantages")
+
+function renderadvantages(data) {
+  let advantageCards = data.map(advantage => {
+    return `
+      <div class="advantage-card">
+      <img src="${advantage.icon}" alt="">
+      <h3>${advantage.headline}</h3>
+      <p>${advantage.text}</p>
+      </div>
+    `
+  }).join("")
+
+  advantagesSection.innerHTML = `
+      <h2>Our Advantages </h2>
+    <div class="advantages-wrapper">
+    ${advantageCards}
+    </div>
+  `
+}
+renderadvantages(advantages)
 
 
 

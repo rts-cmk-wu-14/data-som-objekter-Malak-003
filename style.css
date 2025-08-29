@@ -110,7 +110,7 @@ button{
 }
 
 
-/* ===== Service SECTION ===== */
+/* ===== facilities SECTION ===== */
 .facilities-wrapper{
   display: flex;
         flex-wrap: wrap;
@@ -209,5 +209,39 @@ opacity: 60%;
 }
 
 
+/* ===== Advantages SECTION ===== */
 
+.advantages{
+  padding: 100px;
+}
 
+.advantages-wrapper{
+  display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+
+}
+
+.advantage-card{
+  max-width: 325px;
+}
+
+.advantage-card p{
+  font-size: 14px;
+      opacity: 60%;
+      margin: 20px 0 20px 0;
+     line-height: 1.4;
+
+}
+
+.advantage-card h3{
+  font-size: 22.5px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.advantages h2{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}

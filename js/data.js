@@ -96,3 +96,6 @@ let advantages = [
 ]
 
 // Opret dit dataobjekt til footerens indhold herunder
+
+
+
