@@ -99,3 +99,41 @@ let advantages = [
 
 
 
+let footer = {
+    brand: {
+        name: "Easy Camper",
+        slogan: "When Passion Meets Comfort."
+    },
+    links: [
+        {
+            headline: "Discover the Network",
+            items: [
+                "Where to shop",
+                "Tour Guided",
+                "Our Tours",
+                "About Us"
+            ]
+        },
+        {
+            headline: "Become a Manager",
+            items: [
+                "Join your Pairing",
+                "Offer your Service",
+                "Are you a guide?"
+            ]
+        },
+        {
+            headline: "Assistance",
+            items: [
+                "Support Center",
+                "FAQs",
+                "Cancellation Options",
+                "Reliability and Security"
+            ]
+        }
+    ],
+    bottom: {
+        copyright: "EazyCamper. All rights reserved.",
+        links: ["About", "Site Map", "Terms", "Privacy Policy", "Teams"]
+    }
+}

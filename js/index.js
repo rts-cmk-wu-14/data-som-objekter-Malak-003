@@ -130,6 +130,43 @@ function renderadvantages(data) {
 renderadvantages(advantages)
 
 
+// Footer --------------
+
+const footerSection = document.querySelector(".footer")
+
+function renderFooter(data) {
+  let footerCards = data.links.map(footer => {
+    let items = footer.items.map(item => `<li>${item}</li>`).join("")
+    return `
+      <div class="footer-card">
+        <h3>${footer.headline}</h3>
+        <ul>${items}</ul>
+      </div>
+    `
+  }).join("")
+
+  footerSection.innerHTML = `
+    <div class="footer-top">
+    <div class="footer-head">
+      <h2>${data.brand.name}</h2>
+      <p>${data.brand.slogan}</p>
+    </div>
+
+    <div class="footer-cards">
+      ${footerCards}
+    </div>
+      </div>
+    <div class="border"></div>
+    <div class="footer-bottom">
+      <p>${data.bottom.copyright}</p>
+      <ul>
+        ${data.bottom.links.map(link => `<li>${link}</li>`).join("")}
+      </ul>
+    </div>
+  `
+}
+
+renderFooter(footer)
 
 
 
